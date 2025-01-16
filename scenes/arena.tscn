@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwctnfbv43bmv"]
+
+[ext_resource type="PackedScene" uid="uid://co5be136b4wdf" path="res://scenes/character.tscn" id="1_ddxnd"]
+[ext_resource type="PackedScene" uid="uid://bu7f8yv0imcxg" path="res://scenes/projectile.tscn" id="2_cxx2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1ey7"]
+size = Vector2(177.25, 770.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqyms"]
+size = Vector2(1432, 111.5)
+
+[node name="Arena" type="Node2D"]
+
+[node name="background" type="ColorRect" parent="."]
+offset_left = -37.0
+offset_top = -23.0
+offset_right = 1196.0
+offset_bottom = 685.0
+color = Color(0, 0, 0, 1)
+
+[node name="Character" parent="." instance=ExtResource("1_ddxnd")]
+position = Vector2(291, 83)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 27.0
+offset_right = 70.0
+offset_bottom = 50.0
+text = "0"
+
+[node name="walls" type="StaticBody2D" parent="."]
+position = Vector2(274, 234)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls"]
+position = Vector2(-361.625, 120.75)
+shape = SubResource("RectangleShape2D_q1ey7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="walls"]
+position = Vector2(368, 469.75)
+shape = SubResource("RectangleShape2D_dqyms")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_cxx2v")]
+position = Vector2(429, 172)
