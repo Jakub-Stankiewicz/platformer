@@ -1,26 +1,17 @@
-extends CharacterBody2D
+extends Area2D
 
+@export var speed: float = 400.0
+var direction: Vector2 = Vector2.RIGHT
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -600.0
+func _ready():
+	# Connect signal for collision
+	body_entered.connect(_on_body_entered)
 
-var rotation_direction = 0  # the angle at which projectiles are shot
+func _process(delta):
+	position += direction * speed * delta
 
-func _ready() -> void:
-	var direction := Input.get_axis("ui_left", "ui_right")
-	print(direction)
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	velocity += get_gravity() * delta
-	
-	if is_on_floor():
-		queue_free()
-		
-	
-
-	move_and_slide()
+func _on_body_entered(body: Node):
+	# You can filter by node type if needed
+	if body.is_in_group("players"):
+		GameController.lose_life(body.cotroller_id)
+	queue_free()
