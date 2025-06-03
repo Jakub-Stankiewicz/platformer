@@ -13,5 +13,5 @@ func _process(delta):
 func _on_body_entered(body: Node):
 	# You can filter by node type if needed
 	if body.is_in_group("players"):
-		GameController.lose_life(body.cotroller_id)
+		GameController.update_lives(body.player_id, -1)
 	queue_free()

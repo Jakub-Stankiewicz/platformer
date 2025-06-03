@@ -17,7 +17,7 @@ config/icon="res://sprites/icon.svg"
 
 [autoload]
 
-GameController="*res://game_controller.gd"
+GameController="*res://scenes/game_controller.tscn"
 
 [input]
 

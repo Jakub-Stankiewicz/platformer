@@ -17,7 +17,7 @@ func add_player(player_id: int):
 
 
 
-func update_lives(player_id: int, amount):
+func update_lives(player_id: int, amount: int):
     if players.has(player_id):
         players[player_id] += amount
         emit_signal("lives_updated", player_id, players[player_id])

@@ -17,7 +17,7 @@ offset_right = 1196.0
 offset_bottom = 685.0
 color = Color(0, 0, 0, 1)
 
-[node name="Character" parent="." instance=ExtResource("1_ddxnd")]
+[node name="Character" parent="." groups=["players"] instance=ExtResource("1_ddxnd")]
 position = Vector2(291, 83)
 
 [node name="outer walls" type="StaticBody2D" parent="."]
@@ -55,3 +55,7 @@ offset_bottom = 85.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
+
+[node name="Character2" parent="." groups=["players"] instance=ExtResource("1_ddxnd")]
+position = Vector2(961, 245)
+player_id = 1

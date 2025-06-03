@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var projectile_scene = preload("res://scenes/projectile.tscn")
 
+@export var player_id: int
+
 var speed = 300.0
 var jump_velocity = -600.0
 var max_jump_count = 2
@@ -13,13 +15,14 @@ var direction = 1.0
 
 func shoot(shooting_direction):
 	var projectile = projectile_scene.instantiate()
-	get_tree().current_scene.add_child(projectile)
-	projectile.global_position = global_position
 	
 	if shooting_direction == -1.0:
-		projectile.direction = (Vector2.LEFT)
+		projectile.direction = Vector2.LEFT
 	else:
-		projectile.direction = (Vector2.RIGHT)
+		projectile.direction = Vector2.RIGHT
+
+	projectile.global_position = global_position + (projectile.direction * 60)#(offset)
+	get_tree().current_scene.add_child(projectile)
 
 func jump():
 	jump_count += 1
