@@ -1,5 +1,4 @@
 res://scenes/menus/controller_menu.tscn
 res://themes/main.tres
 res://scenes/menus/menu.tscn
-res://scripts/gamepad.gd
-res://scripts/ui/main_menu.gd
+res://scripts/autoload/game_controller.gd

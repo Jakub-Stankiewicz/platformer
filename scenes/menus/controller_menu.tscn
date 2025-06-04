@@ -3,10 +3,17 @@
 [ext_resource type="Script" uid="uid://cntrkddg2crp8" path="res://scripts/gamepad.gd" id="1_ksg1k"]
 [ext_resource type="Theme" uid="uid://c08aa77vq0ec" path="res://themes/main.tres" id="2_c7m5u"]
 
-[node name="Controller_menu" type="Node2D"]
+[node name="Controller_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_ksg1k")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -32.0
 offset_top = -3.0
 offset_right = 1238.0
@@ -14,6 +21,7 @@ offset_bottom = 703.0
 color = Color(0, 0, 0, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
 offset_right = 1150.0
 offset_bottom = 732.0
 size_flags_horizontal = 3
