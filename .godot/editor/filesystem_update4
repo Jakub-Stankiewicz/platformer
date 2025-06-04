@@ -1,6 +1,4 @@
-res://scenes/arena.tscn
-res://scenes/character.tscn
-res://scenes/projectile.tscn
 res://scenes/menu.tscn
-res://scripts/playButton.gd
+res://scenes/arena.tscn
 res://scripts/exitButton.gd
+res://scripts/playButton.gd
