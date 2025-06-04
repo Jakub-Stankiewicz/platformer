@@ -1,10 +1,3 @@
-res://scenes/menu.tscn
 res://scenes/arena.tscn
 res://scripts/character.gd
-res://scripts/projectile.gd
-res://scripts/ui/main_menu.gd
-res://button.tres
-res://scripts/game_controller.gd
 res://scenes/game_controller.tscn
-res://scripts/autoload/mouse_controller.gd
-res://scripts/autoload/game_controller.gd
