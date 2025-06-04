@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cwctnfbv43bmv"]
 
 [ext_resource type="PackedScene" uid="uid://co5be136b4wdf" path="res://scenes/character.tscn" id="1_ddxnd"]
-[ext_resource type="PackedScene" uid="uid://c3chswyfa42rj" path="res://scenes/heart.tscn" id="2_wl4x5"]
-[ext_resource type="PackedScene" uid="uid://bx0l6xxc6f2e0" path="res://scenes/ammoPickup.tscn" id="3_olpmc"]
+[ext_resource type="PackedScene" uid="uid://c3chswyfa42rj" path="res://scenes/pickups/heart.tscn" id="2_wl4x5"]
+[ext_resource type="PackedScene" uid="uid://bx0l6xxc6f2e0" path="res://scenes/pickups/ammoPickup.tscn" id="3_olpmc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1ey7"]
 size = Vector2(177.25, 770.5)

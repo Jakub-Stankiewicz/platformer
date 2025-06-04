@@ -1,11 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://r02ab1e2go8q"]
 
 [ext_resource type="Script" uid="uid://dyghotkg3s4h8" path="res://scripts/ui/main_menu.gd" id="1_con2f"]
-[ext_resource type="Theme" uid="uid://c08aa77vq0ec" path="res://button.tres" id="2_con2f"]
+[ext_resource type="Theme" uid="uid://c08aa77vq0ec" path="res://themes/main.tres" id="2_con2f"]
 
-[node name="Menu" type="Node2D"]
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("2_con2f")
 
 [node name="background" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -1.0
 offset_top = 1.0
 offset_right = 1151.0
