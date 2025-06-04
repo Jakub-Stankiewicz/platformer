@@ -7,3 +7,4 @@ res://button.tres
 res://scripts/game_controller.gd
 res://scenes/game_controller.tscn
 res://scripts/autoload/mouse_controller.gd
+res://scripts/autoload/game_controller.gd
