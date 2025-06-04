@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwctnfbv43bmv"]
+[gd_scene load_steps=5 format=3 uid="uid://cwctnfbv43bmv"]
 
 [ext_resource type="PackedScene" uid="uid://co5be136b4wdf" path="res://scenes/character.tscn" id="1_ddxnd"]
+[ext_resource type="PackedScene" uid="uid://c3chswyfa42rj" path="res://scenes/heart.tscn" id="2_wl4x5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1ey7"]
 size = Vector2(177.25, 770.5)
@@ -39,7 +40,7 @@ shape = SubResource("RectangleShape2D_q1ey7")
 position = Vector2(327, -292)
 shape = SubResource("RectangleShape2D_dqyms")
 
-[node name="player 1 lives" type="Label" parent="."]
+[node name="player_1_lives" type="Label" parent="."]
 offset_left = 57.0
 offset_top = -5.0
 offset_right = 260.0
@@ -48,7 +49,7 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
 
-[node name="player 2 lives" type="Label" parent="."]
+[node name="player_2_lives" type="Label" parent="."]
 offset_left = 1039.0
 offset_right = 1242.0
 offset_bottom = 85.0
@@ -58,4 +59,7 @@ text = "0"
 
 [node name="Character2" parent="." groups=["players"] instance=ExtResource("1_ddxnd")]
 position = Vector2(961, 245)
-player_id = 1
+player_id = 2
+
+[node name="Heart" parent="." instance=ExtResource("2_wl4x5")]
+position = Vector2(628, 617)

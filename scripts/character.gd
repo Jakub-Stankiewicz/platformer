@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var projectile_scene = preload("res://scenes/projectile.tscn")
 
-@export var player_id: int
+#@export var player_id: int
 
 var speed = 300.0
 var jump_velocity = -600.0
@@ -60,3 +60,23 @@ func _physics_process(delta: float) -> void:
 		jump_count = 1
 
 	move_and_slide()
+
+#HEALTH
+var max_health: int = 5
+var current_health: int = 3
+
+@export var player_id: int = 1  # ustaw w edytorze 1 lub 2
+
+func add_health(amount: int):
+	current_health = min(current_health + amount, max_health)
+	print("HP:", current_health)
+	update_health_label()
+	
+func update_health_label():
+	var label_name = "player_%d_lives" % player_id
+	var label_path = "Arena/" + label_name
+	var label = get_tree().root.get_node(label_path)
+	label.text = "%d / %d" % [current_health, max_health]
+
+func _ready():
+	update_health_label()
