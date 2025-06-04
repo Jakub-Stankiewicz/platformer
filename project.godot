@@ -17,7 +17,8 @@ config/icon="res://sprites/icon.svg"
 
 [autoload]
 
-GameController="*res://scenes/game_controller.tscn"
+GameController="*res://scripts/autoload/game_controller.gd"
+MouseController="*res://scripts/autoload/mouse_controller.gd"
 
 [input]
 

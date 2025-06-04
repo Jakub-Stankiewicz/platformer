@@ -1,9 +1,10 @@
+Control
+CenterContainer
 Label
 Area2D
 Sprite2D
 CollisionShape2D
 VBoxContainer
-CenterContainer
 ColorRect
 MarginContainer
 Button

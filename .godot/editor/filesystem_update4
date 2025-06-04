@@ -1,9 +1,9 @@
 res://scenes/menu.tscn
 res://scenes/arena.tscn
 res://scripts/character.gd
-res://scenes/heart.tscn
-res://scripts/heart.gd
-res://scenes/character.tscn
 res://scripts/projectile.gd
-res://scripts/ammoPickup.gd
-res://scenes/ammoPickup.tscn
+res://scripts/ui/main_menu.gd
+res://button.tres
+res://scripts/game_controller.gd
+res://scenes/game_controller.tscn
+res://scripts/autoload/mouse_controller.gd
