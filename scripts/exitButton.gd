@@ -1,4 +1,4 @@
-extends Button
+extends  Button
 
-func _on_exit_pressed() -> void:
+func _on_pressed() -> void:
 	get_tree().quit()
