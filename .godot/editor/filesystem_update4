@@ -4,3 +4,6 @@ res://scripts/character.gd
 res://scenes/heart.tscn
 res://scripts/heart.gd
 res://scenes/character.tscn
+res://scripts/projectile.gd
+res://scripts/ammoPickup.gd
+res://scenes/ammoPickup.tscn
