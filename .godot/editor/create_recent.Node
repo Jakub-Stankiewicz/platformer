@@ -1,11 +1,12 @@
 Control
-CenterContainer
+Button
 Label
+ColorRect
+VBoxContainer
+CenterContainer
+Container
 Area2D
 Sprite2D
 CollisionShape2D
-VBoxContainer
-ColorRect
 MarginContainer
-Button
 CanvasLayer

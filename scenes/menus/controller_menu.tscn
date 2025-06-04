@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1685d8546wny"]
+
+[ext_resource type="Script" uid="uid://cntrkddg2crp8" path="res://scripts/gamepad.gd" id="1_ksg1k"]
+[ext_resource type="Theme" uid="uid://c08aa77vq0ec" path="res://themes/main.tres" id="2_c7m5u"]
+
+[node name="Controller_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ksg1k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -3.0
+offset_right = 1238.0
+offset_bottom = 703.0
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 732.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 38
+
+[node name="connect label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_c7m5u")
+text = "Connect controllers"
+horizontal_alignment = 1
+
+[node name="Player1" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_c7m5u")
+theme_override_font_sizes/font_size = 32
+text = "Player 1: No controller connected
+"
+
+[node name="Player2" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_c7m5u")
+theme_override_font_sizes/font_size = 32
+text = "Player 2: No controller connected
+"

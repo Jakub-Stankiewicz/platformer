@@ -1,11 +1,14 @@
 extends Control
 
+@onready var my_theme = preload("res://themes/main.tres")
 var using_mouse := true
 
 const MOUSE_TIMEOUT := 0.1 
 
 
 func _ready():
+	if my_theme:
+		print("theme loaded")
 	for button in $VBoxContainer.get_children():
 		if button is Button:
 			button.focus_mode = Control.FOCUS_ALL
@@ -17,7 +20,7 @@ func _ready():
 
 ## BUTTONS
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/arena.tscn")
+	get_tree().change_scene_to_file("res://scenes/menus/controller_menu.tscn")
 
 
 func _on_exit_pressed() -> void:

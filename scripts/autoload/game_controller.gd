@@ -7,6 +7,12 @@ var players: Dictionary
 
 var player_devices = {}
 
+# func _ready():
+# 	OS.window_fullscreen = true
+# 	# optionally set window size if needed:
+# 	# OS.window_size = Vector2(1920, 1080)
+
+
 func _input(event):
 	if event is InputEventJoypadButton or event is InputEventJoypadMotion: #and event.pressed:
 		if event.device not in player_devices:
