@@ -10,7 +10,7 @@ var jump_velocity = -600.0
 var max_jump_count = 2
 
 var jump_count = 0
-var direction = 1.0
+var direction = 0.0
 
 @export var max_ammo: int = 10
 var current_ammo: int = 5
@@ -23,10 +23,14 @@ var previous_shoot_pressed = false
 var max_health: int = 5
 var current_health: int = 3
 
+@onready var animated_sprite = $Sprite2D
+
 
 func _ready():
 	update_health_label()
 	update_ammo_label()
+
+	animated_sprite.play("idle_p" + str(player_id))
 
 	if $Hitbox:
 		$Hitbox.connect("body_entered", Callable(self, "_on_body_entered"))
@@ -44,10 +48,19 @@ func _physics_process(delta: float) -> void:
 
 	for device_id in player_devices.keys():
 		if player_devices[device_id] != player_id:
+			# animated_sprite.play("idle")
 			continue
 
 		var axis_x = Input.get_joy_axis(device_id, JOY_AXIS_LEFT_X)
-		direction = 1.0 if axis_x > 0 else -1.0 if axis_x < 0 else direction
+		if axis_x > 0:
+			direction = 1.0
+		elif axis_x < 0:
+			direction = -1.0
+		else:
+			direction = 0.0
+		# direction = 1.0 if axis_x > 0 else -1.0 #if axis_x < 0 else direction
+		
+
 		velocity.x = direction * speed if abs(axis_x) > 0.1 else move_toward(velocity.x, 0, speed)
 
 		var jump_pressed = Input.is_joy_button_pressed(device_id, JOY_BUTTON_B)
@@ -60,6 +73,19 @@ func _physics_process(delta: float) -> void:
 		if shoot_pressed and not previous_shoot_pressed:
 			shoot(direction)
 		previous_shoot_pressed = shoot_pressed
+
+		# animated_sprite.flip_h = false if axis_x > 0 else -1.0 if axis_x < 0 else true
+		if direction == 1.0: #or direction == -1.0:
+			animated_sprite.flip_h = false
+			animated_sprite.play("walk_p" + str(player_id))
+		elif direction == -1.0:
+			animated_sprite.flip_h = true
+			var animation = "walk_p" + str(player_id)
+			print(animation)
+			animated_sprite.play(animation)
+		else:
+
+			animated_sprite.play('idle_p' + str(player_id))
 
 	move_and_slide()
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cwctnfbv43bmv"]
+[gd_scene load_steps=7 format=3 uid="uid://cwctnfbv43bmv"]
 
 [ext_resource type="PackedScene" uid="uid://co5be136b4wdf" path="res://scenes/character.tscn" id="1_ddxnd"]
 [ext_resource type="PackedScene" uid="uid://c3chswyfa42rj" path="res://scenes/pickups/heart.tscn" id="2_wl4x5"]
+[ext_resource type="Theme" uid="uid://c08aa77vq0ec" path="res://themes/main.tres" id="2_xdvfk"]
 [ext_resource type="PackedScene" uid="uid://bx0l6xxc6f2e0" path="res://scenes/pickups/ammoPickup.tscn" id="3_olpmc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1ey7"]
@@ -21,6 +22,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="Character" parent="." groups=["players"] instance=ExtResource("1_ddxnd")]
 position = Vector2(291, 83)
+scale = Vector2(5, 5)
 
 [node name="outer walls" type="StaticBody2D" parent="."]
 position = Vector2(274, 234)
@@ -42,24 +44,48 @@ position = Vector2(327, -292)
 shape = SubResource("RectangleShape2D_dqyms")
 
 [node name="player_1_lives" type="Label" parent="."]
-offset_left = 57.0
-offset_top = -5.0
-offset_right = 260.0
-offset_bottom = 80.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
+offset_left = 9.0
+offset_top = 16.0
+offset_right = 212.0
+offset_bottom = 101.0
+theme = ExtResource("2_xdvfk")
+theme_override_colors/font_color = Color(0, 0.536463, 0.966375, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="ammoP1" type="Label" parent="."]
+offset_left = 9.0
+offset_top = 82.0
+offset_right = 212.0
+offset_bottom = 167.0
+theme = ExtResource("2_xdvfk")
+theme_override_colors/font_color = Color(0, 0.536463, 0.966375, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
 
 [node name="player_2_lives" type="Label" parent="."]
-offset_left = 1039.0
-offset_right = 1242.0
-offset_bottom = 85.0
+offset_left = 850.0
+offset_top = 20.0
+offset_right = 1053.0
+offset_bottom = 105.0
+theme = ExtResource("2_xdvfk")
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="ammoP2" type="Label" parent="."]
+offset_left = 852.0
+offset_top = 87.0
+offset_right = 1055.0
+offset_bottom = 172.0
+theme = ExtResource("2_xdvfk")
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
 
 [node name="Character2" parent="." groups=["players"] instance=ExtResource("1_ddxnd")]
 position = Vector2(961, 245)
+scale = Vector2(5, 5)
 player_id = 2
 
 [node name="Heart" parent="." instance=ExtResource("2_wl4x5")]
@@ -67,21 +93,3 @@ position = Vector2(628, 617)
 
 [node name="AmmoPickup" parent="." instance=ExtResource("3_olpmc")]
 position = Vector2(132, 602)
-
-[node name="ammoP1" type="Label" parent="."]
-offset_left = 57.0
-offset_top = 61.0
-offset_right = 260.0
-offset_bottom = 146.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-text = "0"
-
-[node name="ammoP2" type="Label" parent="."]
-offset_left = 1041.0
-offset_top = 67.0
-offset_right = 1244.0
-offset_bottom = 152.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-text = "0"

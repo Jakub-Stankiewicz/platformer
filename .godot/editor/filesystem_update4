@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-res://scenes/arena.tscn
-res://scripts/character.gd
-res://scenes/game_controller.tscn
-=======
 res://scenes/menus/controller_menu.tscn
 res://themes/main.tres
 res://scenes/menus/menu.tscn
-res://scripts/autoload/game_controller.gd
->>>>>>> c07ec335a32b140b9feda33505ae214e778cc32c
+res://scenes/arena.tscn
+res://scenes/character.tscn
+res://walk.tres
+res://scripts/character.gd
