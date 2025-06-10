@@ -1,7 +1,13 @@
-res://scenes/menus/controller_menu.tscn
-res://themes/main.tres
 res://scenes/menus/menu.tscn
-res://scenes/arena.tscn
-res://scenes/character.tscn
+res://themes/main.tres
 res://walk.tres
+res://scripts/autoload/game_controller.gd
+res://scenes/arena.tscn
+res://scripts/ammoPickup.gd
+res://scripts/heart.gd
 res://scripts/character.gd
+res://scenes/pickups/heart.tscn
+res://scenes/character.tscn
+res://scenes/menus/GameOver.tscn
+res://scripts/ui/GameOver.gd
+res://scripts/Arena.gd

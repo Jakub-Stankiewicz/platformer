@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgpocapacgja2"]
+
+[ext_resource type="Script" uid="uid://dme37f223pnto" path="res://scripts/ui/GameOver.gd" id="1_6hfuu"]
+
+[node name="GameOver" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6hfuu")
+
+[node name="WinnerLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Player X Wins!"

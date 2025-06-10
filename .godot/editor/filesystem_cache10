@@ -1,39 +1,38 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749105228
-icon.svg::CompressedTexture2D/CompressedTexture2D::4264858473978087688::1748888244::1748888374::1::::<><><>0<>0<>5fc2f7cb736f58eda0d4591cbdd7e3af<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile/TextFile::-1::1748888244::0::1::::<><><>0<>0<><>::
-::res://fonts/::1749045601
-Micro5-Regular.ttf::FontFile/FontFile::8286770474420144839::1749045441::1749045441::1::::<><><>0<>0<>5fdfcf341f2efd473617313cacc60587<>res://.godot/imported/Micro5-Regular.ttf-bc5bffc0a2947a58905bf45b54935fbd.fontdata::
-PressStart2P.ttf::FontFile/FontFile::9056532626488046928::1749045600::1749045601::1::::<><><>0<>0<>dd9fc1231ef540068c63e5c65457780c<>res://.godot/imported/PressStart2P.ttf-5efcbd428e9d940ffb80085ffe21a152.fontdata::
-::res://scenes/::1749105427
-arena.tscn::PackedScene::6322301786269915457::1749105427::0::1::::<><><>0<>0<><>::uid://co5be136b4wdf::::res://scenes/character.tscn<>uid://c3chswyfa42rj::::res://scenes/pickups/heart.tscn<>uid://bx0l6xxc6f2e0::::res://scenes/pickups/ammoPickup.tscn
-character.tscn::PackedScene/PackedScene::5817485781381462043::1749026715::0::1::::<><><>0<>0<><>::uid://bre7fe3gcyb4c::::res://scripts/character.gd<>uid://b106ui6ysn8q3::::res://icon.svg
-projectile.tscn::PackedScene/PackedScene::3856621454894702684::1749026715::0::1::::<><><>0<>0<><>::uid://duprxlurgv0p6::::res://scripts/projectile.gd<>uid://pdupfuf8nk7g::::res://sprites/projectile.png
-::res://scenes/autoload/::1749059619
-game_controller.tscn::PackedScene/PackedScene::7387353647197556265::1749059341::0::1::::<><><>0<>0<><>::uid://7m7sbtkap336::::res://scripts/autoload/game_controller.gd
-::res://scenes/menus/::1749105427
-controller_menu.tscn::PackedScene::9050225140574095346::1749105427::0::1::::<><><>0<>0<><>::uid://cntrkddg2crp8::::res://scripts/gamepad.gd<>uid://c08aa77vq0ec::::res://themes/main.tres
-menu.tscn::PackedScene::1246459237409080330::1749105358::0::1::::<><><>0<>0<><>::uid://dyghotkg3s4h8::::res://scripts/ui/main_menu.gd<>uid://c08aa77vq0ec::::res://themes/main.tres
-::res://scenes/pickups/::1749059590
-ammoPickup.tscn::PackedScene/PackedScene::4053098021450903205::1749041932::0::1::::<><><>0<>0<><>::uid://b0qf5xsmu8prd::::res://scripts/ammoPickup.gd<>uid://pdupfuf8nk7g::::res://sprites/projectile.png
-heart.tscn::PackedScene/PackedScene::6742716100816239679::1749041932::0::1::::<><><>0<>0<><>::uid://bqf28e3p1pkaj::::res://sprites/heart pixel art 32x32.png<>uid://d1gi1hw11d8f::::res://scripts/heart.gd
-::res://scripts/::1749105173
-ammoPickup.gd::GDScript/GDScript::4174530213906645833::1749041927::0::1::::<>Area2D<><>0<>0<><>::
-character.gd::GDScript::3589840662918096896::1749105173::0::1::::<>CharacterBody2D<><>0<>0<><>::
-gamepad.gd::GDScript/GDScript::5725569721337093795::1749066501::0::1::::<>Node<><>0<>0<><>::
-heart.gd::GDScript/GDScript::264620318283574499::1749041927::0::1::::<>Area2D<><>0<>0<><>::
-projectile.gd::GDScript/GDScript::8595078461721904937::1749041927::0::1::::<>Area2D<><>0<>0<><>::
-::res://scripts/autoload/::1749053787
-game_controller.gd::GDScript::2272790699854179775::1749068112::0::1::::<>Node<><>0<>0<><>::
-mouse_controller.gd::GDScript/GDScript::2127483354396741655::1749051438::0::1::::<>Node<><>0<>0<><>::
-::res://scripts/ui/::1749059526
-hud.gd::GDScript/GDScript::8119939004735949243::1749026824::0::1::::<>CanvasLayer<><>0<>0<><>::
-main_menu.gd::GDScript/GDScript::8856631598682940947::1749066568::0::1::::<>Control<><>0<>0<><>::
-::res://sprites/::1749105623
-DinoSprites - doux.png::CompressedTexture2D::6895418584578299437::1749105619::1749105620::1::::<><><>0<>0<>888c561815b5def018e73e467a607c36<>res://.godot/imported/DinoSprites - doux.png-79bcc136722334660ea7ab99f6bd6009.ctex::
-DinoSprites - mort.png::CompressedTexture2D::1557783889282847516::1749105623::1749105624::1::::<><><>0<>0<>22a7a23a2b65390d209e259982f18203<>res://.godot/imported/DinoSprites - mort.png-13b359739e174e64101c658e91a21638.ctex::
-heart pixel art 32x32.png::CompressedTexture2D/CompressedTexture2D::3521462614740275625::1749041927::1749041933::1::::<><><>0<>0<>a707467dc966a70ba6e1af4e0fe592af<>res://.godot/imported/heart pixel art 32x32.png-9a6db4a91ea7a327c2e57e877cf09790.ctex::
-icon.svg::CompressedTexture2D/CompressedTexture2D::4264858473978087688::1748888244::1748888374::1::::<><><>0<>0<>166807e6b43c0db0cdab83dc501a563f<>res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex::
-projectile.png::CompressedTexture2D/CompressedTexture2D::1060267208381206662::1748888244::1748888374::1::::<><><>0<>0<>18b4f6d0de75655c754ace40c8a7268f<>res://.godot/imported/projectile.png-2d735af88c71b93c7e5a81fb8050ded1.ctex::
-::res://themes/::1749105358
-main.tres::Theme::193990842805248318::1749105358::0::1::::<><><>0<>0<><>::uid://d2bb1ff68dye7::::res://fonts/PressStart2P.ttf
+::res://::1749566070
+icon.svg::CompressedTexture2D/CompressedTexture2D::4264858473978087688::1743151279::1748979194::1::::<><><>0<>0<>5fc2f7cb736f58eda0d4591cbdd7e3af<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile/TextFile::-1::1748978655::0::1::::<><><>0<>0<><>::
+walk.tres::SpriteFrames::1277587564757695601::1749454908::0::1::::<><><>0<>0<><>::uid://c5igsimxbykrt::::res://sprites/DinoSprites - doux.png<>uid://wguqc4g86i8s::::res://sprites/DinoSprites - mort.png
+::res://fonts/::1749061088
+Micro5-Regular.ttf::FontFile/FontFile::8286770474420144839::1749061040::1749061088::1::::<><><>0<>0<>5fdfcf341f2efd473617313cacc60587<>res://.godot/imported/Micro5-Regular.ttf-bc5bffc0a2947a58905bf45b54935fbd.fontdata::
+PressStart2P.ttf::FontFile/FontFile::9056532626488046928::1749061040::1749061088::1::::<><><>0<>0<>dd9fc1231ef540068c63e5c65457780c<>res://.godot/imported/PressStart2P.ttf-5efcbd428e9d940ffb80085ffe21a152.fontdata::
+::res://scenes/::1749456244
+arena.tscn::PackedScene::6322301786269915457::1749456244::0::1::::<><><>0<>0<><>::uid://co5be136b4wdf::::res://scenes/character.tscn<>uid://c3chswyfa42rj::::res://scenes/pickups/heart.tscn<>uid://c08aa77vq0ec::::res://themes/main.tres<>uid://bx0l6xxc6f2e0::::res://scenes/pickups/ammoPickup.tscn
+character.tscn::PackedScene/PackedScene::5817485781381462043::1749454893::0::1::::<><><>0<>0<><>::uid://bre7fe3gcyb4c::::res://scripts/character.gd<>uid://sg4xexxwkear::::res://walk.tres
+projectile.tscn::PackedScene/PackedScene::3856621454894702684::1748979410::0::1::::<><><>0<>0<><>::uid://duprxlurgv0p6::::res://scripts/projectile.gd<>uid://pdupfuf8nk7g::::res://sprites/projectile.png
+::res://scenes/menus/::1749455704
+controller_menu.tscn::PackedScene/PackedScene::9050225140574095346::1749071238::0::1::::<><><>0<>0<><>::uid://cntrkddg2crp8::::res://scripts/gamepad.gd<>uid://c08aa77vq0ec::::res://themes/main.tres
+menu.tscn::PackedScene::1246459237409080330::1749455704::0::1::::<><><>0<>0<><>::uid://dyghotkg3s4h8::::res://scripts/ui/main_menu.gd<>uid://c08aa77vq0ec::::res://themes/main.tres
+::res://scenes/pickups/::1749071238
+ammoPickup.tscn::PackedScene/PackedScene::4053098021450903205::1749071238::0::1::::<><><>0<>0<><>::uid://b0qf5xsmu8prd::::res://scripts/ammoPickup.gd<>uid://pdupfuf8nk7g::::res://sprites/projectile.png
+heart.tscn::PackedScene/PackedScene::6742716100816239679::1749071238::0::1::::<><><>0<>0<><>::uid://bqf28e3p1pkaj::::res://sprites/heart pixel art 32x32.png<>uid://d1gi1hw11d8f::::res://scripts/heart.gd
+::res://scripts/::1749456244
+ammoPickup.gd::GDScript::4174530213906645833::1749456244::0::1::::<>Area2D<><>0<>0<><>::
+character.gd::GDScript::3589840662918096896::1749455648::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gamepad.gd::GDScript::5725569721337093795::1749455648::0::1::::<>Node<><>0<>0<><>::
+heart.gd::GDScript/GDScript::264620318283574499::1749026465::0::1::::<>Area2D<><>0<>0<><>::
+projectile.gd::GDScript/GDScript::8595078461721904937::1749028672::0::1::::<>Area2D<><>0<>0<><>::
+::res://scripts/autoload/::1749460258
+game_controller.gd::GDScript::2272790699854179775::1749460258::0::1::::<>Node<><>0<>0<><>::
+mouse_controller.gd::GDScript/GDScript::2127483354396741655::1749061040::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/ui/::1749071238
+hud.gd::GDScript/GDScript::8119939004735949243::1749071238::0::1::::<>CanvasLayer<><>0<>0<><>::
+main_menu.gd::GDScript/GDScript::8856631598682940947::1749071238::0::1::::<>Control<><>0<>0<><>::
+::res://sprites/::1749454900
+DinoSprites - doux.png::CompressedTexture2D/CompressedTexture2D::6895418584578299437::1749454893::1749454900::1::::<><><>0<>0<>888c561815b5def018e73e467a607c36<>res://.godot/imported/DinoSprites - doux.png-79bcc136722334660ea7ab99f6bd6009.ctex::
+DinoSprites - mort.png::CompressedTexture2D/CompressedTexture2D::1557783889282847516::1749454893::1749454900::1::::<><><>0<>0<>22a7a23a2b65390d209e259982f18203<>res://.godot/imported/DinoSprites - mort.png-13b359739e174e64101c658e91a21638.ctex::
+heart pixel art 32x32.png::CompressedTexture2D/CompressedTexture2D::3521462614740275625::1749025420::1749025421::1::::<><><>0<>0<>a707467dc966a70ba6e1af4e0fe592af<>res://.godot/imported/heart pixel art 32x32.png-9a6db4a91ea7a327c2e57e877cf09790.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::4264858473978087688::1743151279::1748979194::1::::<><><>0<>0<>166807e6b43c0db0cdab83dc501a563f<>res://.godot/imported/icon.svg-964d8c66fbd3bda40c44ca195472a8e1.ctex::
+projectile.png::CompressedTexture2D/CompressedTexture2D::1060267208381206662::1743151279::1748979194::1::::<><><>0<>0<>18b4f6d0de75655c754ace40c8a7268f<>res://.godot/imported/projectile.png-2d735af88c71b93c7e5a81fb8050ded1.ctex::
+::res://themes/::1749454045
+main.tres::Theme::193990842805248318::1749454045::0::1::::<><><>0<>0<><>::uid://d2bb1ff68dye7::::res://fonts/PressStart2P.ttf

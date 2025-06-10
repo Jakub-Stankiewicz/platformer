@@ -1,7 +1,7 @@
-AnimatedSprite2D
-Control
-Button
 Label
+Control
+AnimatedSprite2D
+Button
 ColorRect
 VBoxContainer
 CenterContainer
