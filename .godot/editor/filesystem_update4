@@ -11,3 +11,6 @@ res://scenes/character.tscn
 res://scenes/menus/GameOver.tscn
 res://scripts/ui/GameOver.gd
 res://scripts/Arena.gd
+res://scripts/projectile.gd
+res://scripts/GameState.gd
+res://scripts/ui/RetryButton.gd

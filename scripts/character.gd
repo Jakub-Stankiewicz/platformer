@@ -116,15 +116,18 @@ func shoot(shooting_direction):
 
 	GameController.current_ammo -= 1
 	update_ammo_label()
-	
+
 	var projectile = projectile_scene.instantiate()
 	if shooting_direction == -1.0:
 		projectile.direction = Vector2.LEFT
 	else:
 		projectile.direction = Vector2.RIGHT
 	projectile.global_position = global_position + (projectile.direction * 60)
-	projectile.owner = self
-	get_tree().current_scene.add_child(projectile)
+
+	get_tree().current_scene.add_child(projectile)  # <- dodaj do drzewa NAJPIERW
+
+	projectile.shooter = self  # <- dopiero wtedy ustaw "shooter"
+
 
 
 func jump():
@@ -164,3 +167,4 @@ func _on_lives_updated(updated_player_id: int, lives: int):
 
 func die():
 	print("Gracz %d zginął!" % player_id)
+	queue_free()

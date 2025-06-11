@@ -19,6 +19,7 @@ config/icon="res://sprites/icon.svg"
 
 GameController="*res://scripts/autoload/game_controller.gd"
 MouseController="*res://scripts/autoload/mouse_controller.gd"
+GameState="*res://scripts/GameState.gd"
 
 [display]
 

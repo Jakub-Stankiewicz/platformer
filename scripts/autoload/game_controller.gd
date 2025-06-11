@@ -1,6 +1,8 @@
 extends Node
 
 signal lives_updated(player_id: int, lives: int)
+signal game_over(winner_id: int)
+
 
 @export var max_ammo: int = 10
 var current_ammo: int = 5
@@ -42,11 +44,10 @@ func update_lives(player_id: int, amount: int):
 		print("Updated lives for player %d: %d" % [player_id, players[player_id]])
 		emit_signal("lives_updated", player_id, players[player_id])
 
-	if players[player_id] <= 0:
-		player_died(player_id)
+		if players[player_id] <= 0:
+			player_died(player_id)
 	else:
 		print("Player id not found:", player_id)
-
 
 
 func update_ammo(amount: int):
@@ -57,3 +58,18 @@ func update_ammo(amount: int):
 
 func player_died(player_id: int):
 	print("Player %d is out!" % player_id)
+	# Znajdź zwycięzcę (np. gracza, który nie zginął)
+	var winner_id = null
+	for p_id in players.keys():
+		if players[p_id] > 0:
+			winner_id = p_id
+			break
+	if winner_id != null:
+		emit_signal("game_over", winner_id)
+
+
+
+func show_game_over(winner_id: int):
+	GameState.winner_id = winner_id
+	get_tree().paused = true
+	get_tree().change_scene("res://scenes/GameOver.tscn")
